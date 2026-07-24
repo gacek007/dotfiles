@@ -43,4 +43,4 @@ sudo apt install flatpak -y && flatpak remote-add --if-not-exists flathub https:
     #Gparted
         sudo apt install gparted -y 
     #yt-dlp
-        sudo apt update && sudo apt install -y ffmpeg curl && sudo curl -L https://github.com -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp
+        sudo apt update && sudo apt install -y ffmpeg curl && sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp
