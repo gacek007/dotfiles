@@ -1,7 +1,9 @@
 #FLATPAK 
-sudo apt install flatpak
+sudo apt install flatpak -y && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     #Baobab(wykorzystanie dysku)
-        flatpak install flathub org.gnome.baobab
+        flatpak install flathub org.gnome.baobab -y
+    #Bitwarden
+        flatpak install flathub com.bitwarden.desktop
     #Brave
         flatpak install flathub com.brave.Browser
     #Callibre(ebooks editor)
@@ -37,8 +39,8 @@ sudo apt install flatpak
         
 #classic
     #7zip
-        sudo apt install p7zip-full
+        sudo apt install p7zip-full -y
     #Gparted
-        sudo apt install gparted
+        sudo apt install gparted -y 
     #yt-dlp
         sudo apt update && sudo apt install -y ffmpeg curl && sudo curl -L https://github.com -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp
