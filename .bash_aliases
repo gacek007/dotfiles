@@ -8,4 +8,8 @@ alias unrar='unrar x'
 alias comfy='cd /home/$USER/Programy/ComfyUI && source venv/bin/activate && python3 main.py'
 alias comfy_update='cd /home/$USER/Programy/ComfyUI && source venv/bin/activate && git pull && pip install -r requirements.txt --upgrade'
 alias zapis='watch "grep -e Dirty: -e Writeback: /proc/meminfo"'
-
+git_push() {
+    # default 'update'
+    local msg="${1:-Update}"
+    git add . && git commit -m "$msg" && git push origin main
+}
