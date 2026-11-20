@@ -1,6 +1,6 @@
+alias ytdlpinstall='sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp && sudo apt install -y ffmpeg'
 alias ytdlpmp3='yt-dlp -f "bestaudio/best" -x --audio-format mp3 --audio-quality 0 -o "%(title)s.%(ext)s" -ciw'
 alias ytdlpgood='yt-dlp -f "bestvideo[ext=mp4][vcodec!^=av0][vcodec!^=av1]+bestaudio[ext=m4a]/mp4/best" -ciw'
-alias ytdlptest='yt-dlp -f "bestvideo[ext=mp4][vcodec!^=av0][vcodec!^=av1]+bestaudio[ext=m4a]/mp4/best" --extractor-args "youtube:player_client=default" -ciw'
 alias ytdlpbest='yt-dlp -f "bv+ba/b" --merge-output-format mp4'
 alias 7zip='7z x'
 alias dell='ssh root@192.168.100.55'
